@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finabocci </title>
+</head>
+<body>
+
+    <h1>Finabocci sequence</h1>
+    <p>The Finabocci sequence of a given number</p>
+
+    <script>
+        function finabocci(number){
+            if(number <= 1){
+                return 1;
+            } else {
+                return finabocci(number -1) + finabocci(number -2);
+            }
+        }
+
+
+
+        // Output:
+        // finabocci(5)
+        // 8
+    </script>
+</body>
+</html>
